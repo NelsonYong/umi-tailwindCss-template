@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind公共自定义样式文件 */
+
+@layer base {
+  .bs-bg-title {
+    background: red no-repeat center;
+    background: 'cover';
+    height: '77px';
+    position: 'relative';
+  }
+
+  .bs-bg {
+    opacity: 1;
+    @apply h-screen w-screen;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .bs-border {
+    box-shadow: 0 0 0.5vw #237ad4 inset;
+    background: linear-gradient(#96d7e5, #96d7e5) left top,
+      linear-gradient(#96d7e5, #96d7e5) left top,
+      linear-gradient(#96d7e5, #96d7e5) right top,
+      linear-gradient(#96d7e5, #96d7e5) right top,
+      linear-gradient(#96d7e5, #96d7e5) left bottom,
+      linear-gradient(#96d7e5, #96d7e5) left bottom,
+      linear-gradient(#96d7e5, #96d7e5) right bottom,
+      linear-gradient(#96d7e5, #96d7e5) right bottom;
+    background-repeat: no-repeat;
+    background-size: 0.14rem 1.08rem, 1.08rem 0.14rem;
+    @apply p-4;
+  }
+
+  .bs-border1 {
+    box-shadow: 0 0 0.5vw #237ad4 inset;
+    background: linear-gradient(#96d7e5, #96d7e5) left top,
+      linear-gradient(#96d7e5, #96d7e5) left top,
+      linear-gradient(#96d7e5, #96d7e5) right top,
+      linear-gradient(#96d7e5, #96d7e5) right top,
+      linear-gradient(#96d7e5, #96d7e5) left bottom,
+      linear-gradient(#96d7e5, #96d7e5) left bottom,
+      linear-gradient(#96d7e5, #96d7e5) right bottom,
+      linear-gradient(#96d7e5, #96d7e5) right bottom;
+    background-repeat: no-repeat;
+    background-size: 0.14rem 1.08rem, 1.08rem 0.14rem;
+  }
+}
