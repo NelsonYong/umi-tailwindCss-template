@@ -5,11 +5,11 @@
 Install dependencies,
 
 ```bash
-$ yarn
+$ yarn i -g qdm-cli
 ```
 
 Start the dev server,
 
 ```bash
-$ yarn start
+$ qdm-cli creact projecName
 ```
