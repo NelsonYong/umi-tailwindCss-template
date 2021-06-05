@@ -2,14 +2,18 @@
 
 ## Getting Started
 
-Install dependencies,
+Install CLI,
 
 ```bash
 $ yarn i -g qdm-cli
 ```
-
-Start the dev server,
+Install dependencies,
 
 ```bash
 $ qdm-cli creact projecName
+```
+
+Run your Serve
+```bash
+$ yarn start
 ```
