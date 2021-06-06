@@ -1,7 +1,7 @@
 import './tailwind.css';
 import './index.less';
-import React from 'react';
 import TemplateComponent from './TemplateComponent';
+import { Button } from 'antd';
 
 export default function IndexPage() {
   return (
@@ -22,25 +22,14 @@ export default function IndexPage() {
           style={{ fontSize: '0.8vw' }}
         >
           更新时间：
-          <span>{''}</span>
-        </div>
-
-        <div
-          className="absolute right-4 top-10 text-blue-300 flex"
-          style={{ fontSize: '0.8vw' }}
-        >
-          {/* 顶部弹窗 */}
-          <div
-            className=" text-blue-300  flex items-center mr-4"
-            style={{ fontSize: '0.8vw', cursor: 'pointer' }}
-          >
-            <div className="pr-2"></div>
-          </div>
+          <span className="text-white">{'2020-6-1'}</span>
         </div>
       </div>
 
       {/* 组件内使用 bs-border 样式 */}
+
       <div className=" flex flex-row w-screen flex-1">
+        {/* 左边 */}
         <div className=" h-full w-1/4">
           <div className="h-1/3 w-full p-2 pb-1 pt-2">
             <TemplateComponent />
@@ -48,6 +37,8 @@ export default function IndexPage() {
           <div className="h-1/3 w-full pl-2 pr-2 pb-1 pt-1">{/* 2 */}</div>
           <div className="h-1/3 w-full p-2 pb-2 pt-1 ">{/* 3 */}</div>
         </div>
+
+        {/* 中间 */}
         <div className="w-2/4 h-full">
           <div className="h-1/4 pt-2 pb-1 ">{/* 4 */}</div>
           <div className="h-3/4 pt-2 pb-2  ">
@@ -57,6 +48,8 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
+
+        {/* 右边 */}
         <div className="w-1/4 h-full">
           <div className="h-1/3 w-full p-2 pb-1 ">{/* 7 */}</div>
           <div className="h-2/3 w-full p-2 pb-2 pt-1 ">{/* 8 */}</div>

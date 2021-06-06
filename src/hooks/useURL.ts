@@ -3,11 +3,11 @@ type Lable = '个人信息1' | '个人信息2';
 const urls: { lable: Lable; value: string }[] = [
   {
     lable: '个人信息1',
-    value: 'https://api.github.com/users/NelsonYong/repos',
+    value: 'url1',
   },
   {
     lable: '个人信息2',
-    value: 'https://api.github.com/users/NelsonYong',
+    value: 'url2',
   },
 ];
 
