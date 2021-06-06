@@ -1,5 +1,3 @@
-export type TemplateType =
-  | {
-      num: number;
-    }
-  | any;
+export type TemplateType = {
+  num: number;
+};
